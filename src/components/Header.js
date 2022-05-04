@@ -7,9 +7,7 @@ const Header = () => {
 
   const isAuth = useSelector(state => state.auth.isLoggedIn);
 
-  const handleLogout = (e) => {
-    e.preventDefault();
-
+  const handleLogout = () => {
     dispatch(authActions.logout());
   };
 
